@@ -1,7 +1,10 @@
 body {
     background-image: linear-gradient(to right, #ff5722, #ff9800);
+   
+    background-size: cover;
     margin-top: 150px !important;
 }
+
 .register-left{
     text-align: center;
     color: #fff;
