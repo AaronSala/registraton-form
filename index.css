@@ -39,3 +39,35 @@ body {
     margin-bottom: 10px;
     color: #448890;
 }
+.register-form{
+    padding: 30px;
+}
+.register-right .btn-primary {
+    float: right;
+    border-radius: 1.5rem;
+    border: none;
+    width: 120px;
+    background: #ff9800;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px;
+}
+.register-right .btn-primary:hover{
+    background: #ff5722;
+}
+.fa-arrow-down{
+   font-size: 4rem;
+    
+}
+.register-left i{
+    margin-top: 60px;
+    margin-bottom: 18px;
+    width: 80px;
+    animation: mover 1s infinite alternate;
+}
+@keyframes mover
+{
+    0%{transform: translateY(0);}
+    100%{transform: translateY(-40px);}
+}
