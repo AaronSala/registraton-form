@@ -1,0 +1,25 @@
+
+.parent{
+  
+    overflow: hidden;
+    height: 24rem;
+    width: 32rem;
+    margin: 5rem;
+  
+    background: rgba(223, 232, 33, 0.4);
+    border: 3px solid black;
+    
+}
+.child {
+    height: 6rem;
+    width: 10rem;
+    transition: transform 1s;
+    padding: 3rem;
+    background: rgba(322, 22, 33, 1);
+    border: 3px solid black;
+   
+}
+.parent:hover .child{
+    transform: translateX(100%);
+    background-color: black;
+}
