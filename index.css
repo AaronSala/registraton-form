@@ -69,6 +69,13 @@ body {
     width: 80px;
     animation: mover 1s infinite alternate;
 }
+.error{
+    
+    color: red;
+    font-style: italic;
+    padding: 3px;
+    display: none;
+}
 @keyframes mover
 {
     0%{transform: translateY(0);}
