@@ -23,6 +23,7 @@ submit.addEventListener("click", (e) => {
         input.style.border = "1px solid green";
       }
     });
+    error.style.display = "none";
   });
 
   if (
@@ -33,7 +34,33 @@ submit.addEventListener("click", (e) => {
     console.log("passworsds do not match");
     names[4].style.border = "1px solid red";
     names[5].style.border = "1px solid red";
+    document.querySelector(".passerror").style.display = "block";
   } else {
-    console.log("passworsds match");
+    document.querySelector(".passerror").style.display = "none";
+    console.log(" passworsds match");
   }
+ 
+  
+ members();
 });
+function members() {
+ const named = document.querySelectorAll(".form-control");
+  const container = document.querySelector(".members")
+  
+  const member = document.createElement("div")
+  member.classList.add("eachMember")
+
+  const membered = `
+  <ul member1>
+  <li> <h3>${named[0].value} ${named[1].value}</h3></li>
+   
+    <li>Email: <span>${named[2].value}</span></li>
+     <li>Phone: <span>${named[3].value}</span></li>
+  </ul>
+  `;
+  container.appendChild(member)
+  member.insertAdjacentHTML("beforeend", membered);
+  
+}
+
+

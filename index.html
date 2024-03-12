@@ -27,18 +27,18 @@
             <div class="col-md-7 register-right">
               
               <h2>Register Here</h2>
-              <div class="register-form form">
+              <div class="register-form form" name="form" >
                 <span class="error"></span>
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="name" name="name"/> 
+                  <input type="text" class="form-control" placeholder="First name" name="name"/> 
                 </div>
                 
                 <div class="form-group">
                   <input
-                  name="username"
+                  name="name"
                     type="text"
                     class="form-control"
-                    placeholder="Username"
+                    placeholder="Last name"
                   />
                 </div>
                   
@@ -61,6 +61,7 @@
                 </div>
                 
                 <div class="form-group">
+                  <passError class="passerror">passwords mmust match</passError>
                   <input
                   name="password"
                     type="password"
@@ -84,6 +85,8 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="members">
       </div>
     </div>
     <script src="index.js"></script>

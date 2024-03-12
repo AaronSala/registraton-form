@@ -69,6 +69,7 @@ body {
     width: 80px;
     animation: mover 1s infinite alternate;
 }
+.passerror,
 .error{
     
     color: red;
@@ -80,4 +81,23 @@ body {
 {
     0%{transform: translateY(0);}
     100%{transform: translateY(-40px);}
+}
+.members{
+    margin-top: 8px;
+    background: #ddd;
+    padding: 6px;
+    
+    
+    
+}
+.members li{
+    
+    list-style-type: none;
+}
+.members span{
+font-style: italic;
+
+}
+.eachMember{
+   background: #f8f8f8;
 }
